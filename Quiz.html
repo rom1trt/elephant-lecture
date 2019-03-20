@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Quiz de fin du TPE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="Quiz.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="Quiz.js"></script>
+	<style>
+		body{
+			background-image: url('http://wallpapersdsc.net/wp-content/uploads/2016/09/Savannah-Wallpapers-HD.jpg');
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="menu">
+        <nav>
+            <label for="menu-mobile" class="menu-mobile">MENU</label>
+            <input type="checkbox" id="menu-mobile" role="button">
+            <ul>
+                <li class="menu-1"><a href="Site.html">ACCUEIL</a>
+                    <ul class="submenu">
+                        <li><a href="sous_menu1.html">I-ONDES SONORES CHEZ L'ÉLÉPHANT</a></li>
+                            </li>
+                        <li><a href="sous_menu2.html">II-ONDES SISMIQUES CHEZ L'ÉLÉPHANT</a></li>
+                        <li><a href="conclusion.html">CONCLUSION</a></li>
+                    </ul>
+                </li>
+                <li class="menu-2"><a href="Expériences.html">EXPÉRIENCES</a>
+                    <ul class="submenu">
+                        <li><a href="cloche_à_vide.html">CLOCHE À VIDE</a></li>
+                        <li><a href="ondes_sonores.html">ONDES SONORES</a></li>
+                        <li><a href="ondes_sismiques.html">ONDES SISMIQUES</a></li>
+                    </ul>
+                </li>
+                <li class="menu-4"><a href="Sources.html">SOURCES</a>
+                    <ul class="submenu">
+                        <li><a href="web.html">WEB</a></li>
+                        <li><a href="videos.html">VIDÉOS</a></li>
+                    </ul>
+                </li>
+                <li class="menu-3"><a href="Quiz.html">QUIZ</a>
+                    <!--<ul class="submenu">
+                        <li><a href="#">...........</a></li>
+                        <li><a href="#">...........</a></li>
+                        <li><a href="#">...........</a></li>
+                    </ul>-->
+                </li>
+                <li class="menu-0">TPE : La communication chez les éléphants grâce aux ondes par Romain, Guillaume, et Amaury<p id="oklm">Lycée Hoche </br>Année 2018-2019</p>
+                    
+                </li>
+                    </div>
+	<h1>Test de connaisssances de fin de TPE</h1>
+	<form id="quiz" name="quiz">
+		<!--<p>Si un éléphant veut envoyer une onde sismique à un autre éléphant le plus loin possible dans quel milieu vaut-il mieux qu’il se trouve ?</p>
+	<input id="textbook" type="text" name= "question1">-->
+
+		<p>Quelle(s) partie(s) du corps de l’éléphant permet de faciliter la détection des signaux sismiques et à améliorer la qualité de ces signaux ? </p>
+    <input type="radio" id="mc" name="question2" value="Ses oreilles">Ses oreilles</br>
+	<input type="radio" id="mc" name="question2" value="Sa trompe">Sa trompe</br>
+	<input type="radio" id="mc" name="question2" value="Les boules de graisse dans ses pattes">Les boules de graisse (Corpuscules de Pacini) situées dans ses pattes</br>
+
+		<p>Un éléphant ne peut pas produire d'ultrasons à cause de</p>
+	<input type="radio" id="mc" name="question3" value="5 kilomètres de distance">Son poids</br>
+	<input type="radio" id="mc" name="question3" value="Il ne les reconnaît pas">Sa trompe</br>
+	<input type="radio" id="mc" name="question3" value="2 kilomètres de distance">La grande longueur de son larynx</br>
+
+	<p>Le mécanisme qui a été testé et approuvé dans l'expérience de Christian Herbst est :</p>
+	<input type="radio" id="mc" name="question4" value="Le mécanisme AMC">Le mécanisme AMC</br>
+	<input type="radio" id="mc" name="question4" value="Le mécanisme MEAD">Le mécanisme MEAD</br>
+
+	<p>Quel est la vitesse d’une onde sonore ?</p>
+	<input type="radio" id="mc" name="question5" value="300 000km/s">300 000km/s</br>
+	<input type="radio" id="mc" name="question5" value="340m/s">340m/s</br>
+	<input type="radio" id="mc" name="question5" value="230 m/s">230 m/s</br>
+
+	<p>Sur une distance éloignée, est-il plus efficace de communiquer avec l'aide d'infrasons ou d'ondes sismiques ? </p>
+	<input type="radio" id="mc" name="question6" value="Oui">Avec l'aide d'ondes sismiques</br>
+	<input type="radio" id="mc" name="question6" value="Non">Avec l'aide d'ondes sonores</br>
+
+	<p>Quelle personne a démontré l'utiilisation du mécanisme MEAD chez l'éléphant lors de la communication de l'éléphant par son larynx ?</p>
+	<input id="textbook" type="text" name= "question8">
+
+	<p>Qu’est ce que les éléphants peuvent produire ?</p>
+	<input type="radio" id="mc" name="question7" value="Des infrasons">Des infrasons</br>
+	<input type="radio" id="mc" name="question7" value="Des ultrasons">Des ultrasons</br>
+	<input type="radio" id="mc" name="question7" value="Des ondes électromagnétiques">Des ondes électromagnétiques</br>
+
+	<p>L'atténuation anélastique intervenant lors de la communication des éléphants grâce aux ondes sonores est dû </p>
+	<input type="radio" id="mc" name="question9" value="À la température">À la température</br>
+	<input type="radio" id="mc" name="question9" value="Au chauffage du support par lequel il se propage">Au chauffage du support par lequel il se propage</br>
+
+	
+	<input id="button" type="button" value="J'ai fini !" onclick="check();">
+
+	</form>
+
+	<div id="after_submit">
+
+		<p id="message"></p>
+		<p id="number_correct"></p>
+		<img id="picture">
+	
+	</div>
+	
+	</html>
+
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+body{
+	background-color: #A9A9A9;
+	font-family: Verdana, Calibri;
+	margin:0px;
+	padding:0px;
+	text-align: center;
+	width:100%;
+
+}
+#oklm{
+	font-weight: normal;
+	font-style: oblique;
+	color:black;
+	padding: 0px;
+	font-size:15px;
+	font-family:cursive;
+}
+.menu-1 .submenu{
+	background-color: #FFFF00 ;
+}
+
+.menu-2 .submenu{
+	background-color: rgb(000, 160, 240);
+}
+
+.menu-3 .submenu{
+	background-color: rgb(232, 0, 0);
+}
+
+.menu-4 .submenu{
+	background-color: #008000;
+}
+
+.menu-1 ul li{
+     background:linear-gradient(#FFFF0080, #ccff15);
+}
+.menu-2 ul li{
+	background: linear-gradient(#0070bb, #00BFFF )
+}
+.menu-4 ul li{
+	background: linear-gradient(#008000, #32CD32)
+}
+
+ul li a{
+     background: #666;
+     transition: background 0.5s;
+}
+
+ul li a:hover{
+     background: transparent;
+     transition: background 0s;
+}
+.submenu li:hover a{
+	color: black;
+	font-weight: bold;
+}
+
+.menu-1 .submenu li:hover{
+	background-color: rgba(255, 255, 0, 0.15);
+
+}
+
+.menu-2 .submenu li:hover{
+	background-color: rgba(000, 115, 200,0.15);
+}
+
+.menu-3 .submenu li:hover{
+	background-color: rgba(232, 0, 0, 0.15);
+}
+
+.menu-4 .submenu li:hover{
+	background-color: rgba(50, 205, 50, 0.15) ;
+}
+
+nav {
+	width:100%;
+	background-color: #6B8E23 ; 
+}
+
+nav > ul{
+	margin: 0px;
+	padding: 0px;
+	height: 150px;
+	width:100%;
+}
+
+nav > li {
+	list-style-type:none;
+	position: relative;
+}
+
+nav > ul > li {
+	float:left;
+	position: relative;
+}
+
+nav > ul::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+
+.submenu{
+	display:none;
+	background-color: black;
+}
+
+.submenu2{
+	display:none;
+	background-color: black;
+
+}
+
+nav input[type=checkbox]{
+	display:none;
+}
+
+nav label {
+	display:none;
+}
+
+nav a{
+	display:inline-block;
+	text-decoration: none;
+	list-style-type: none;
+	margin:0px;
+	padding:10px;
+	font-size:20px;
+}
+
+nav > ul > li > a{
+	padding: 45px 16px; 
+	color: black;
+	list-style-type: none;
+	background-color:#6B8E23;
+	padding:35px;
+}
+
+nav li:hover .submenu{
+	display:inline-block;
+	position:absolute;
+	top: 100%;
+	left: 0px;
+	padding: 1px;
+	z-index: 1000;
+	list-style-type: none;
+}
+
+
+.menu-0{
+	left: 700px; 
+	text-align: center; 
+	float:right;
+	/*display: inline-block;*/
+	font-size: 20px;
+	font-family: Stencil Std, cursive ;
+	font-style: oblique;
+	font-weight: bold;
+	position:absolute;
+	list-style-type: none;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color:black;
+	padding-left: 55px;
+}
+
+.menu-1{
+	list-style-type: none;
+	font-weight: bold;
+}
+
+.menu-2{
+	list-style-type: none;
+	font-weight: bold;
+}
+.menu-3{
+	list-style-type: none;
+	font-weight: bold;
+}
+.menu-4{
+	list-style-type: none;
+	font-weight: bold;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: black;
+	width:250px;
+}
+
+.submenu li {
+	border-bottom: 1px solid black;
+	font-weight: none;
+}
+
+.menu-1:hover{
+	border-top: 5px solid #FFFF00;
+	background-color: rgba(255, 255, 0, 0.15);
+}
+
+.menu-2:hover{
+	border-top: 5px solid #0070bb;
+	background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-3:hover{
+	border-top: 5px solid #E80000 ;
+	background-color: rgba(232, 0, 0, 0.15);
+}
+
+.menu-4:hover{
+	border-top: 5px solid #008000;
+	background-color: rgba(0, 128, 0, 0.15);
+}
+p :hover{
+	color:green;
+}
+
+img{
+	margin:auto;
+	display:block;
+	vertical-align: center;
+	padding-top: 15px;
+}
+
+h1{
+	text-decoration: underline;
+	text-align:center;
+	color:black;
+	font-weight: 600;
+	font-family:"Helvetica", sans-serif;
+}
+
+h2{
+	text-decoration: underline overline;
+	color: green;
+	text-align: center;
+	font-weight: 500;
+	font-style:oblique;
+	font-family: "Helvetica", sans-serif;
+}
+
+h3{
+	text-decoration: underline;
+	padding-left:5px;
+}
+
+h4{
+	font-size:40px;
+	text-align:center;
+	text-decoration: overline underline;
+	padding-bottom: 20px;
+	padding-top: 5px;
+	font-weight:;
+	font-style:oblique;
+}
+
+#vitesse1{
+	font-size:25px;
+	text-decoration: underline ;
+	font-weight: bold;
+	font-style: oblique;
+}
+
+#vitesse2{
+	font-size:25px;
+	text-decoration: underline ;
+	font-weight: bold;
+	font-style: oblique;
+}
+
+p{
+	font-family: "Helvetica", sans-serif;
+	text-align: center;
+	color: #121615;
+	padding-top: 0px; 
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#container{
+ width:1000px;
+ min-height:100%;
+ background-color:#fff;
+ margin:auto;
+}
+
+figcaption{
+	text-align: center;
+	padding-top: 10px;
+	font-style:oblique;
+	padding-bottom: 8px;
+	font-size: 17px;
+	font-family:"Tahoma", "Geneva", sans-serif;
+	font-weight: bold;
+}
+
+.menu-1 .submenu{
+	background-color: #FFFF00 ;
+}
+
+.menu-2 .submenu{
+	background-color: rgb(000, 160, 240);
+}
+
+.menu-3 .submenu{
+	background-color: rgb(232, 0, 0);
+}
+
+.menu-4 .submenu{
+	background-color: #008000;
+}
+
+.menu-1 ul li{
+     background:linear-gradient(#FFFF0080, #ccff15);
+}
+.menu-2 ul li{
+	background: linear-gradient(#0070bb, #00BFFF )
+}
+.menu-4 ul li{
+	background: linear-gradient(#008000, #32CD32)
+}
+
+ul li a{
+     background: #666;
+     transition: background 0.5s;
+}
+
+ul li a:hover{
+     background: transparent;
+     transition: background 0s;
+}
+.submenu li:hover a{
+	color: black;
+	font-weight: bold;
+}
+
+.menu-1 .submenu li:hover{
+	background-color: rgba(255, 255, 0, 0.15);
+
+}
+
+.menu-2 .submenu li:hover{
+	background-color: rgba(000, 115, 200,0.15);
+}
+
+.menu-3 .submenu li:hover{
+	background-color: rgba(232, 0, 0, 0.15);
+}
+
+.menu-4 .submenu li:hover{
+	background-color: rgba(50, 205, 50, 0.15) ;
+}
+
+nav input[type=checkbox]:checked ~ ul {
+	display: inline-block;
+}
+
+.menu-mobile{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1065px){
+	/*menu-mobile{
+		display: block;
+		color: black;
+		background-color: #696969;
+		text-align: center;
+		width:100%;
+		padding: 25px 0px;
+	}*/
+
+
+nav ul{
+		display: inline-block;
+		color:blue;
+	}
+
+nav ul li, nav ul li a{
+	width: 50%;
+	color:black;
+	text-align: center;
+
+	}
+
+.menu-0{
+	display: none;
+}
+#container{
+ width:90%;
+ min-height:100%;
+ background-color:#fff;
+ margin:auto;
+}
+
+nav ul li a, nav ul li:hover a{
+	padding: 10px 0px;
+	}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: normal;
+
+	}
+
+img{
+	width: 90%;
+}
+}
